@@ -11,8 +11,8 @@ and TODOs.
 4. MongoDB
 5. WebPack
 * Installation
-  1. Configure your mongoDB database URI and credentials at config.js.
-  2. Clone repository ``git clone https://github.com/johndavedecano/api-org-app.git``
+  1. Clone repository git clone https://github.com/johndavedecano/api-org-app.git
+  2. Configure your mongoDB database URI and credentials at config.js.
     #+BEGIN_SRC sh
       # Install npm packages
       npm install
