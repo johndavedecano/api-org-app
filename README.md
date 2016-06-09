@@ -74,7 +74,7 @@ and TODOs.
     complete this test, so long as the resulting app is a standard web
     application that can be deployed using the standard tooling:
 
-    #+BEGIN_SRC sh
+```
       # assuming Perl on Mojolicious app in myapp.pl
       ./myapp.pl daemon
 
@@ -83,4 +83,4 @@ and TODOs.
 
       # assuming Ruby on Rails
       rails server
-    #+END_SRC
+```
