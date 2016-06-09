@@ -29,7 +29,7 @@ and TODOs.
   1. Fork this repository on your own personal GitHub account.
   2. Download your fork, build this app, and begin making changes.
   3. When finished, create a Pull Request to merge into YOYO's version,
-     then send an email to [[https://github.com/zakame][@zakame]] to let him know you're ready for
+     then send an email to ```https://github.com/zakame``` ```@zakame``` to let him know you're ready for
      review.
   4. We will close the pull request.
 
@@ -57,8 +57,8 @@ and TODOs.
      TODO-tracking activities.
   7. The app should make it easy to switch a note to a TODO entry, and
      vice versa.
-  8. The web app's UI should be accessible at [[http://localhost:3000]],
-     while its API should be at [[http://localhost:3000/api]].
+  8. The web app's UI should be accessible at ```http://localhost:3000```,
+     while its API should be at ```http://localhost:3000/api```.
 
 ##Notes
 
