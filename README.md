@@ -8,6 +8,7 @@ and TODOs.
 ![My Image](https://raw.githubusercontent.com/johndavedecano/api-org-app/master/screenshot.png)
 
 ##Technology Stack
+
 1. NodeJS
 2. ReactJS + Redux
 3. ExpressJS
@@ -17,6 +18,7 @@ and TODOs.
 ##Installation
   1. Clone repository git clone https://github.com/johndavedecano/api-org-app.git
   2. Configure your mongoDB database URI and credentials at config.js.
+
 ```
       # Install npm packages
       npm install
