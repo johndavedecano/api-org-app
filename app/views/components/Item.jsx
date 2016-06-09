@@ -14,6 +14,15 @@ class Item extends Component {
 			this.props.todo
 		));
 	}
+	changeStatusCheckbox(e) {
+		this.props.todo.done = (this.props.todo.done) ? false : true;
+		requests.update(this.props.todo)
+			.done(() => {
+				this.props.dispatch(updateTodo(
+					this.props.todo
+				));
+			});
+	}
 	onDelete(e) {
 		requests.destroy(this.props.todo._id);
 		return this.props.dispatch(destroyTodo(
@@ -34,7 +43,8 @@ class Item extends Component {
 			<div className="item">
 				<div className="row">
 					<div className="col-xs-12 col-md-9">
-						<h4 className="pull-left">
+						<h4>
+							<input type="checkbox" onChange={this.changeStatusCheckbox.bind(this)} checked={this.props.todo.done} name="done" style={{ marginRight : 15 }}/>
 							<a onClick={this.onUpdate.bind(this)} href="javacript:void(0)" data-id={this.props.todo._id}>{this.props.todo.title}</a>
 						</h4>
 					</div>

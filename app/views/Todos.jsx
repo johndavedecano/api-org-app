@@ -61,7 +61,7 @@ class Todos extends Component {
 						</div>
 						<div style={{ padding: 10 }}>
 							<Lists />
-							<div className="row">
+							<div className="row hide">
 								<div className="col-md-12">
 									<a href="javascript:void(0)" style={{ marginBottom : 10 }} onClick={this.onLoadMore.bind(this)} className="btn btn-success btn-block btn-large" data-done="0">Load More</a>
 								</div>

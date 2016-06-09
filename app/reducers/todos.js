@@ -8,7 +8,7 @@ import {
 } from './../constants';
 
 const todosState = {
-	limit : 5,
+	limit : 10000,
 	done  : false,
 	todos : []
 }
