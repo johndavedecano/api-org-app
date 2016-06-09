@@ -16,6 +16,7 @@ export function lists(req, res) {
 	Todo
 		.find()
 		.limit(limit)
+		.sort('-createdAt')
 		.exec((error, todos) => {
 			if (error) {
 				res.status(422).send(error);
