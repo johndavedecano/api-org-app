@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { updateTodo } from './../actions';
+import moment from 'moment';
 
 class TodosView extends Component {
 	constructor(props, context) {
@@ -24,10 +25,11 @@ class TodosView extends Component {
 			return this.context.router.goBack();
 		}
 		this.setState({
-			_id    : todos[0]._id,
-			title  : todos[0].title,
-			text   : todos[0].text,
-			done   : todos[0].done
+			_id       : todos[0]._id,
+			title     : todos[0].title,
+			text      : todos[0].text,
+			done      : todos[0].done,
+			createdAt : todos[0].createdAt
 		});
 	}
 	onSubmit(e) {
@@ -74,6 +76,10 @@ class TodosView extends Component {
 										<div className="form-group">
 											<label>Title</label>
 											<p>{this.state.title} - <a onClick={this.onUpdate.bind(this)} href="javacript:void(0)" data-id={this.state._id}>Edit</a></p>
+										</div>
+										<div className="form-group">
+											<label>Last Modified At</label>
+											<p>{ moment(new Date(this.state.createdAt)).format("lll") }</p>
 										</div>
 										<div className="form-group">
 											<label>Status</label><br/>

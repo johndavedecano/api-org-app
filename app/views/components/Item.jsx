@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { updateTodo, destroyTodo } from './../../actions';
 import * as requests from './../../requests/todosDTO';
+import moment from 'moment';
 
 class Item extends Component {
 	constructor(props, context) {
@@ -47,6 +48,10 @@ class Item extends Component {
 							<input type="checkbox" onChange={this.changeStatusCheckbox.bind(this)} checked={this.props.todo.done} name="done" style={{ marginRight : 15 }}/>
 							<a onClick={this.onUpdate.bind(this)} href="javacript:void(0)" data-id={this.props.todo._id}>{this.props.todo.title}</a>
 						</h4>
+						<div>
+							<strong>last modified at: </strong>
+							<small>{ moment(new Date(this.props.todo.createdAt)).format("lll") } </small>
+						</div>
 					</div>
 					<div className="col-xs-12 col-md-3">
 						<a className="btn btn-small btn-success pull-right" onClick={this.changeStatus.bind(this)}>{statustext}</a>
