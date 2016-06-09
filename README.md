@@ -13,6 +13,7 @@ and TODOs.
 3. ExpressJS
 4. MongoDB
 5. WebPack
+
 ##Installation
   1. Clone repository git clone https://github.com/johndavedecano/api-org-app.git
   2. Configure your mongoDB database URI and credentials at config.js.
