@@ -1,4 +1,4 @@
-#TITLE: API Org App
+#API Org App
 AUTHOR: Zak B. Elep <zak.elep@yoyo-holdings.com>
 
 API Org App is [[https://github.com/yoyo-holdings][YOYO]]'s technical test.  This is a standard web
