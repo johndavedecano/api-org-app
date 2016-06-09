@@ -5,7 +5,7 @@ API Org App is [[https://github.com/yoyo-holdings][YOYO]]'s technical test.  Thi
 application that provides a simple organizer for the user to store notes
 and TODOs.
 
-![My Image](https://raw.github.com/johndavedecano/api-org-app/blob/master/screenshot.png)
+![My Image](https://raw.githubusercontent.com/johndavedecano/api-org-app/master/screenshot.png)
 
 * Technology Stack
 1. NodeJS
