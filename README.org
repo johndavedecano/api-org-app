@@ -4,7 +4,23 @@
 API Org App is [[https://github.com/yoyo-holdings][YOYO]]'s technical test.  This is a standard web
 application that provides a simple organizer for the user to store notes
 and TODOs.
-
+* Technology Stack
+1. NodeJS
+2. ReactJS + Redux
+3. ExpressJS
+4. MongoDB
+5. WebPack
+* Installation
+  1. Configure your mongoDB database URI and credentials at config.js.
+  2. Clone repository ```git clone https://github.com/johndavedecano/api-org-app.git```
+    #+BEGIN_SRC sh
+      # Install npm packages
+      npm install
+      # Build Application
+      npm run build-production
+      # Fire up the server
+      npm start
+    #+END_SRC
 * Instructions
 
   1. Fork this repository on your own personal GitHub account.
